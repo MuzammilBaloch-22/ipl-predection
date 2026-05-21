@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:title", content: "Muzammil Baloch - IPL 2026 Predictions" },
       { property: "og:description", content: "IPL 2026 playoff forecast with match analysis, fan polls, official predictions aur team insights." },
-      { property: "og:image", content: "https://ipl2026-predection.vercel.app/og-image.png" },
+      { property: "og:image", content: "https://ipl2026-predection.vercel.app/muzammil.jpeg" },
       { property: "og:url", content: "https://ipl2026-predection.vercel.app/" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
