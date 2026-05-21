@@ -14,14 +14,21 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Muzammil Baloch's IPL 2026 Playoffs & Final Predictions" },
+      { title: "Muzammil Baloch - IPL 2026 Predictions" },
       {
         name: "description",
         content:
-          "Cinematic IPL 2026 playoff predictions, Orange Cap, Purple Cap, match analysis, fan blogs and live polls by Muzammil Baloch.",
+          "Muzammil Baloch's IPL 2026 prediction website - playoffs, final predictions, Orange Cap, Purple Cap, fan blogs, and polls.",
       },
-      { property: "og:title", content: "IPL 2026 Playoffs Predictions Hub" },
-      { property: "og:description", content: "Match-by-match predictions, brackets, fan blogs and polls." },
+      { property: "og:title", content: "Muzammil Baloch - IPL 2026 Predictions" },
+      { property: "og:description", content: "IPL 2026 playoff forecast with match analysis, fan polls, official predictions aur team insights." },
+      { property: "og:image", content: "https://ipl2026-predection.vercel.app/og-image.png" },
+      { property: "og:url", content: "https://ipl2026-predection.vercel.app/" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Muzammil Baloch - IPL 2026 Predictions" },
+      { name: "twitter:description", content: "IPL 2026 playoff forecast with match analysis, fan polls, and final predictions." },
+      { name: "twitter:image", content: "https://ipl2026-predection.vercel.app/og-image.png" },
     ],
   }),
 });
