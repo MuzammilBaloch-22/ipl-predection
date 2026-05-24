@@ -2,32 +2,32 @@ import { motion } from "framer-motion";
 import rcbLogo from "@/assets/rcb-logo.jpg";
 import srhLogo from "@/assets/srh-logo.avif";
 import gtLogo from "@/assets/gt-logo.jpg";
-import kkrLogo from "@/assets/kkr-logo.jpg";
+import rrLogo from "@/assets/rr-logo.avif";
 import { SectionTitle } from "./SectionTitle";
 
 const teamLogos: Record<string, string> = {
   SRH: srhLogo,
   RCB: rcbLogo,
   GT: gtLogo,
-  KKR: kkrLogo,
+  RR: rrLogo,
 };
 
 const teamChances = [
-  { code: "SRH", color: "#ff7a00", pct: 34 },
-  { code: "RCB", color: "#e8262d", pct: 27 },
-  { code: "KKR", color: "#7b3fb7", pct: 22 },
-  { code: "GT", color: "#3b6cb2", pct: 17 },
+    { code: "GT", color: "#3b6cb2", pct: 75 },
+    { code: "RCB", color: "#e8262d", pct: 65 },
+  { code: "SRH", color: "#ff7a00", pct: 45 },
+  { code: "RR", color: "#7b3fb7", pct: 35 },
 ];
 const powerplay = [
   { code: "SRH", color: "#ff7a00", pct: 92 },
   { code: "RCB", color: "#e8262d", pct: 78 },
   { code: "GT", color: "#3b6cb2", pct: 74 },
-  { code: "KKR", color: "#7b3fb7", pct: 71 },
+  { code: "RR", color: "#7b3fb7", pct: 71 },
 ];
 const finishers = [
   { name: "Heinrich Klaasen", rating: 96 },
   { name: "Rinku Singh", rating: 91 },
-  { name: "Shreyas Iyer", rating: 84 },
+  { name: "Donovan Ferreira", rating: 84 },
   { name: "Tim David", rating: 82 },
 ];
 
@@ -132,14 +132,14 @@ export function Stats() {
             </ul>
           </Panel>
           <Panel title="Most Runs (Predicted)">
-            <div className="font-display text-4xl text-glow-cyan">Abhishek Sharma</div>
-            <div className="mt-1 text-sm text-slate-400">Sunrisers Hyderabad</div>
-            <div className="mt-4 font-display text-6xl text-glow-gold">712</div>
+            <div className="font-display text-4xl text-glow-cyan">Shubman Gill</div>
+            <div className="mt-1 text-sm text-slate-400">Gujrat Titans</div>
+            <div className="mt-4 font-display text-6xl text-glow-gold">740</div>
             <div className="text-xs uppercase tracking-widest text-slate-400">Total Runs</div>
           </Panel>
           <Panel title="Most Wickets (Predicted)">
-            <div className="font-display text-4xl text-glow-cyan">Bhuvneshwar Kumar</div>
-            <div className="mt-1 text-sm text-slate-400">Royal Challengers Bengaluru</div>
+            <div className="font-display text-4xl text-glow-cyan">Kagiso Rabada</div>
+            <div className="mt-1 text-sm text-slate-400">Gujrat Titans</div>
             <div className="mt-4 font-display text-6xl text-glow-gold">28</div>
             <div className="text-xs uppercase tracking-widest text-slate-400">Total Wickets</div>
           </Panel>

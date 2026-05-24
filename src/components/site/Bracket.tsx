@@ -3,7 +3,7 @@ import trophy from "@/assets/trophy.png";
 import rcbLogo from "@/assets/rcb-logo.jpg";
 import srhLogo from "@/assets/srh-logo.avif";
 import gtLogo from "@/assets/gt-logo.jpg";
-import kkrLogo from "@/assets/kkr-logo.jpg";
+import rrLogo from "@/assets/rr-logo.avif";
 import { SectionTitle } from "./SectionTitle";
 
 type Team = { code: string; name: string; color: string; logo: string };
@@ -11,7 +11,7 @@ const teams: Record<string, Team> = {
   SRH: { code: "SRH", name: "Sunrisers Hyderabad", color: "#ff7a00", logo: srhLogo },
   RCB: { code: "RCB", name: "Royal Challengers", color: "#e8262d", logo: rcbLogo },
   GT: { code: "GT", name: "Gujarat Titans", color: "#3b6cb2", logo: gtLogo },
-  KKR: { code: "KKR", name: "Kolkata Knight Riders", color: "#7b3fb7", logo: kkrLogo },
+  RR: { code: "RR", name: "Rajasthan Royals", color: "#1c4b8f", logo: rrLogo },
 };
 
 function TeamPill({ t, winner }: { t: Team; winner?: boolean }) {
@@ -78,14 +78,14 @@ export function Bracket() {
         />
         <div className="grid gap-6 lg:grid-cols-4">
           <div className="space-y-4">
-            <Match label="Qualifier 1" a={teams.SRH} b={teams.RCB} winner="a" />
-            <Match label="Eliminator" a={teams.GT} b={teams.KKR} winner="a" />
+            <Match label="Qualifier 1" a={teams.GT} b={teams.RCB} winner="b" />
+            <Match label="Eliminator" a={teams.SRH} b={teams.RR} winner="a" />
           </div>
           <div className="space-y-4 lg:pt-16">
-            <Match label="Qualifier 2" a={teams.RCB} b={teams.GT} winner="a" />
+            <Match label="Qualifier 2" a={teams.GT} b={teams.SRH} winner="a" />
           </div>
           <div className="space-y-4 lg:pt-32">
-            <Match label="Final" a={teams.SRH} b={teams.RCB} winner="a" />
+            <Match label="Final" a={teams.RCB} b={teams.GT} winner="b" />
           </div>
           <div className="flex flex-col items-center justify-center text-center">
             <div className="relative">
@@ -99,7 +99,7 @@ export function Bracket() {
                 loading="lazy"
               />
             </div>
-            <div className="mt-4 font-display text-2xl text-glow-gold">SRH</div>
+            <div className="mt-4 font-display text-2xl text-glow-gold">GT</div>
             <div className="text-sm uppercase tracking-[0.3em] text-yellow-200/80">Predicted Champions</div>
           </div>
         </div>

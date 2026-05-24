@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 import rcbLogo from "@/assets/rcb-logo.jpg";
 import srhLogo from "@/assets/srh-logo.avif";
 import gtLogo from "@/assets/gt-logo.jpg";
-import kkrLogo from "@/assets/kkr-logo.jpg";
+import rrLogo from "@/assets/rr-logo.avif";
 import { supabase } from "@/integrations/supabase/client";
 import { SectionTitle } from "./SectionTitle";
 
 const options = [
-  { code: "SRH", color: "#ff7a00", logo: srhLogo },
-  { code: "RCB", color: "#e8262d", logo: rcbLogo },
   { code: "GT", color: "#3b6cb2", logo: gtLogo },
-  { code: "KKR", color: "#7b3fb7", logo: kkrLogo },
+  { code: "RCB", color: "#e8262d", logo: rcbLogo },
+  { code: "SRH", color: "#ff7a00", logo: srhLogo },
+  { code: "RR", color: "#1c4b8f", logo: rrLogo },
 ];
 
 const VOTED_KEY = "ipl2026_poll_voted";

@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import muzammil from "@/assets/muzammil.jpeg";
 import stadium from "@/assets/stadium.jpg";
-import rcbLogo from "/images/rcb-logo.jpg";
-import srhLogo from "/images/srh-logo.avif";
-import gtLogo from "/images/gt-logo.jpg";
-import kkrLogo from "/images/kkr-logo.jpg";
+import rcbLogo from "@/assets/rcb-logo.jpg";
+import srhLogo from "@/assets/srh-logo.avif";
+import gtLogo from "@/assets/gt-logo.jpg";
+import rrLogo from "@/assets/rr-logo.avif";
 import { Particles } from "./Particles";
 
 export function Hero() {
@@ -72,7 +72,7 @@ export function Hero() {
               { t: "RCB", c: "#e8262d", logo: rcbLogo },
               { t: "SRH", c: "#ff7a00", logo: srhLogo },
               { t: "GT", c: "#4a90d9", logo: gtLogo },
-              { t: "KKR", c: "#7b3fb7", logo: kkrLogo },
+              { t: "RR", c: "#7b3fb7", logo: rrLogo },
             ].map((x) => (
               <div
                 key={x.t}

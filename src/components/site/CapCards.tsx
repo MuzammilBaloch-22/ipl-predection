@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import rcbLogo from "@/assets/rcb-logo.jpg";
 import srhLogo from "@/assets/srh-logo.avif";
 import gtLogo from "@/assets/gt-logo.jpg";
+import rrLogo from "@/assets/rr-logo.avif";
 import kkrLogo from "@/assets/kkr-logo.jpg";
 import { SectionTitle } from "./SectionTitle";
 
@@ -9,6 +10,7 @@ const teamLogos: Record<string, string> = {
   SRH: srhLogo,
   RCB: rcbLogo,
   GT: gtLogo,
+  RR: rrLogo,
   KKR: kkrLogo,
 };
 
@@ -76,9 +78,9 @@ function Card({ p, accent }: { p: Cap; accent: "orange" | "purple" }) {
 
 export function OrangeCap() {
   const players: Cap[] = [
-    { name: "Abhishek Sharma", team: "Sunrisers Hyderabad", jersey: "SRH", color: "#ff7a00", stat: 712, statLabel: "Predicted Runs", rank: 1 },
-    { name: "Shubman Gill", team: "Gujarat Titans", jersey: "GT", color: "#3b6cb2", stat: 668, statLabel: "Predicted Runs", rank: 2 },
-    { name: "Heinrich Klaasen", team: "Sunrisers Hyderabad", jersey: "SRH", color: "#ff7a00", stat: 612, statLabel: "Predicted Runs", rank: 3 },
+    { name: "Shubman Gill", team: "Gujarat Titans", jersey: "GT", color: "#3b6cb2", stat: 740 , statLabel: "Predicted Runs", rank: 1 },
+    { name: "Sai Sudharsan", team: "Gujarat Titans", jersey: "GT", color: "#3b6cb2", stat: 710, statLabel: "Predicted Runs", rank: 2 },
+    { name: "Heinrich Klaasen", team: "Sunrisers Hyderabad", jersey: "SRH", color: "#ff7a00", stat: 670, statLabel: "Predicted Runs", rank: 3 },
   ];
   return (
     <section id="orange" className="relative py-24">
@@ -94,9 +96,9 @@ export function OrangeCap() {
 
 export function PurpleCap() {
   const players: Cap[] = [
-    { name: "Bhuvneshwar Kumar", team: "Royal Challengers", jersey: "RCB", color: "#e8262d", stat: 28, statLabel: "Predicted Wickets", rank: 1 },
-    { name: "Kagiso Rabada", team: "Gujarat Titans", jersey: "GT", color: "#3b6cb2", stat: 25, statLabel: "Predicted Wickets", rank: 2 },
-    { name: "Jofra Archer", team: "Royal Challengers", jersey: "RCB", color: "#e8262d", stat: 21, statLabel: "Predicted Wickets", rank: 3 },
+       { name: "Kagiso Rabada", team: "Gujarat Titans", jersey: "GT", color: "#3b6cb2", stat: 28, statLabel: "Predicted Wickets", rank: 1 },
+    { name: "Bhuvneshwar Kumar", team: "Royal Challengers", jersey: "RCB", color: "#e8262d", stat: 27, statLabel: "Predicted Wickets", rank: 2 },
+    { name: "Jofra Archer", team: "Rajasthan Royals", jersey: "RR", color: "#e8262d", stat: 25, statLabel: "Predicted Wickets", rank: 3 },
   ];
   return (
     <section id="purple" className="relative py-24">
