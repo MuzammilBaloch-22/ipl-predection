@@ -134,13 +134,13 @@ export function Stats() {
           <Panel title="Most Runs (Predicted)">
             <div className="font-display text-4xl text-glow-cyan">Shubman Gill</div>
             <div className="mt-1 text-sm text-slate-400">Gujrat Titans</div>
-            <div className="mt-4 font-display text-6xl text-glow-gold">740</div>
+            <div className="mt-4 font-display text-6xl text-glow-gold">785</div>
             <div className="text-xs uppercase tracking-widest text-slate-400">Total Runs</div>
           </Panel>
           <Panel title="Most Wickets (Predicted)">
             <div className="font-display text-4xl text-glow-cyan">Kagiso Rabada</div>
             <div className="mt-1 text-sm text-slate-400">Gujrat Titans</div>
-            <div className="mt-4 font-display text-6xl text-glow-gold">28</div>
+            <div className="mt-4 font-display text-6xl text-glow-gold">30</div>
             <div className="text-xs uppercase tracking-widest text-slate-400">Total Wickets</div>
           </Panel>
           <Panel title="About Muzammil">
