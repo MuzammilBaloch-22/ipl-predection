@@ -78,8 +78,8 @@ function Card({ p, accent }: { p: Cap; accent: "orange" | "purple" }) {
 
 export function OrangeCap() {
   const players: Cap[] = [
-    { name: "Shubman Gill", team: "Gujarat Titans", jersey: "GT", color: "#3b6cb2", stat: 740 , statLabel: "Predicted Runs", rank: 1 },
-    { name: "Sai Sudharsan", team: "Gujarat Titans", jersey: "GT", color: "#3b6cb2", stat: 710, statLabel: "Predicted Runs", rank: 2 },
+    { name: "Shubman Gill", team: "Gujarat Titans", jersey: "GT", color: "#3b6cb2", stat: 785 , statLabel: "Predicted Runs", rank: 1 },
+    { name: "Sai Sudharsan", team: "Gujarat Titans", jersey: "GT", color: "#3b6cb2", stat: 768, statLabel: "Predicted Runs", rank: 2 },
     { name: "Heinrich Klaasen", team: "Sunrisers Hyderabad", jersey: "SRH", color: "#ff7a00", stat: 670, statLabel: "Predicted Runs", rank: 3 },
   ];
   return (
@@ -96,8 +96,8 @@ export function OrangeCap() {
 
 export function PurpleCap() {
   const players: Cap[] = [
-       { name: "Kagiso Rabada", team: "Gujarat Titans", jersey: "GT", color: "#3b6cb2", stat: 28, statLabel: "Predicted Wickets", rank: 1 },
-    { name: "Bhuvneshwar Kumar", team: "Royal Challengers", jersey: "RCB", color: "#e8262d", stat: 27, statLabel: "Predicted Wickets", rank: 2 },
+       { name: "Kagiso Rabada", team: "Gujarat Titans", jersey: "GT", color: "#3b6cb2", stat: 30, statLabel: "Predicted Wickets", rank: 1 },
+    { name: "Bhuvneshwar Kumar", team: "Royal Challengers", jersey: "RCB", color: "#e8262d", stat: 29, statLabel: "Predicted Wickets", rank: 2 },
     { name: "Jofra Archer", team: "Rajasthan Royals", jersey: "RR", color: "#e8262d", stat: 25, statLabel: "Predicted Wickets", rank: 3 },
   ];
   return (
